@@ -37,7 +37,6 @@ in
       ''}
       mkdir /bin/
       ln -s ${pkgs.stdenv.shell} /bin/sh
-      ${pkgs.ntp}/bin/ntpdate 192.168.2.1
 
       # disable DPMS on tty's
       echo -ne "\033[9;0]" > /dev/tty0
